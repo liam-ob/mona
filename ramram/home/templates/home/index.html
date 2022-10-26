@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Image</h2>
+
+<button type="button" title="refresh posts">
+    <a href="{% url 'home:refresh' %}">Refresh</a>
+</button>
+
+{% for image in context %}
+<img src="context" alt="Trulli" width="500" height="333">
+{% endfor %}
+
+</body>
+</html>
+
